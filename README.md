@@ -3,7 +3,7 @@
 This repo is a conversational interface to chat to some URL content
 
 * `index_url`: this API gets URL text
-* `ask.py`: this API takes a URL content (from `index_url`) and a question. It uses a pre-trained transformer ( `[DistilBERT](https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad)` ) to anwer the question based on the context given by the URL. Additionally, it stores the content with a session ID for follow-up questions
+* `ask.py`: this API takes a URL content (from `index_url`) and a question. It uses a pre-trained transformer [DistilBERT](https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad) to anwer the question based on the context given by the URL. Additionally, it stores the content with a session ID for follow-up questions
 * `chat_api` this API is responsible for the conversation. It allows initial questions and questions given the previous context
 
 ## Requisites
@@ -52,3 +52,7 @@ and you will get
 `{"answer": "September 2022 to August 2023"}`
 
 which is just the _answer_ related to the previous URL.
+
+## Q&A
+
+For further information, suggestions, and doubts, please reach me out: natalidesanti@gmail.com
