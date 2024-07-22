@@ -3,7 +3,7 @@
 This repo is a conversational interface to chat to some URL content
 
 * `index_url`: this API gets URL text
-* `ask.py`: this API takes a URL content (from `index_url`) and a question. It uses a pre-trained transformer (`[DistilBERT](https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad)`) to anwer the question based on the context given by the URL. Additionally, it stores the content with a session ID for follow-up questions
+* `ask.py`: this API takes a URL content (from `index_url`) and a question. It uses a pre-trained transformer ( `[DistilBERT](https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad)` ) to anwer the question based on the context given by the URL. Additionally, it stores the content with a session ID for follow-up questions
 * `chat_api` this API is responsible for the conversation. It allows initial questions and questions given the previous context
 
 ## Requisites
@@ -39,13 +39,7 @@ An example of _first question_ can be given by:
 
 and you would obtain something like
 
-`{
-
-"answer": "a physicist working with Machine Learning",
-
-"session_id": "f6dbcb56-556b-4f6c-9d97-991834e06b22"
-
-}`
+`{"answer": "a physicist working with Machine Learning", "session_id": "f6dbcb56-556b-4f6c-9d97-991834e06b22"}`
 
 that follows for the _answer_ to the question and the _ID_ for follow-up questions that can be made.
 
@@ -55,12 +49,6 @@ that follows for the _answer_ to the question and the _ID_ for follow-up questio
 
 and you will get
 
-`
-{
-
-"answer": "September 2022 to August 2023"
-
-}
-`
+`{"answer": "September 2022 to August 2023"}`
 
 which is just the _answer_ related to the previous URL.
